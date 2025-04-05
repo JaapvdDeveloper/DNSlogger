@@ -4,19 +4,10 @@ package com.example;
  * Hello world!
  *
  */
-public class DnsLogger
+public class App 
 {
     public static void main( String[] args )
     {
-
+        System.out.println( "Hello World!" );
     }
-
-    public void start() {
-
-    }
-
-    public void stop() {
-
-    }
-
 }
