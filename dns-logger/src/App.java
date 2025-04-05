@@ -4,10 +4,20 @@ package com.example;
  * Hello world!
  *
  */
-public class App 
+public class App
 {
+    Logger logger = new Logger();
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+
     }
+
+    public void start() {
+
+    }
+
+    public void stop() {
+
+    }
+
 }
