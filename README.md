@@ -1,2 +1,2 @@
 # DNSlogger
-Dual java project
+Dual java project for creating a dns logger
