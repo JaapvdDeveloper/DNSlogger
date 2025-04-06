@@ -53,6 +53,7 @@ public class DnsListener {
 
   }
 
+  //Controleert of de method 'isRunning' wordt uitgevoerd. Zo ja, toon "DNS listener is running", en zo niet, toon 'DNS Listener is not running'.
   public static void isRunning() {
 
     if(isRunning) {
@@ -63,9 +64,12 @@ public class DnsListener {
       isRunning = false;
     }
 
+
   }
 
   public static void main(String[] args) {
+
+    //Start een instantie van de klasse en vervoer vervolgens de methods startListening en isRunning uit
     DnsListener listener = new DnsListener();
     //Start de listener
     startListening();
