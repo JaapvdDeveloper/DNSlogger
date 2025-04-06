@@ -1,27 +1,31 @@
-package com.example;
-import java.util.logging;
-import java.io;
-import java.net;
-/**
- * Hello world!
- *
- */
-public class DnsLogger
+ class DnsLogger implements DnsListener
 {
-    Logger logger = DnsLogger.getLogger(DnsLogger.l);
+    private static Logger logger = Logger.getLogger(DnsLogger.class.getName());
+  //  Logger logger = DnsLogger.getLogger(DnsLogger.l);
 
 
     public static void main( String[] args )
     {
+        //Maak een logger instance aan
+        DnsLogger.logger = new Logger();
+
+        //roep de logger method aan
+        DnsLogger.start();
+
+        //Stop de logger wanneer nodig
+        DnsLogger.stop();
+
 
     }
 
-    public void start() {
-
+    //Start de logger met een prompt die aangeeft "DNS Logger started"
+    public static void start() {
+        logger.info("DNS Logger started");
     }
 
-    public void stop() {
-
+    //Stop de logger met een prompt die aangeeft "DNS Logger stopped
+    public static void stop() {
+        logger.info("DNS Logger stopped");
     }
 
 }

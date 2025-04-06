@@ -1,4 +1,6 @@
-package src.java.com
+import java.net.DatagramPacket;
+import java.net.*;
+
 
 public class DnsListener {
   private int port;
@@ -13,8 +15,8 @@ public class DnsListener {
 
   }
 
-  public void onDNsRequest(dnsRequest: DnsRequest) {
-
-  }
+//  public void onDNsRequest(dnsRequest: DnsRequest) {
+//
+//  }
 
 }
