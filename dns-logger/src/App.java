@@ -1,4 +1,8 @@
- class DnsLogger
+import java.util.logging.LogRecord;
+import java.util.logging.StreamHandler;
+
+
+class DnsLogger extends StreamHandler
 {
     private static Logger logger = Logger.getLogger(DnsLogger.class.getName());
   //  Logger logger = DnsLogger.getLogger(DnsLogger.l);
@@ -8,7 +12,6 @@
     {
         //Maak een logger instance aan
         DnsLogger.logger = new Logger();
-
         //roep de logger method aan
         DnsLogger.start();
 
