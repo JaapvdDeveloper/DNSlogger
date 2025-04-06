@@ -1,4 +1,4 @@
- class DnsLogger implements DnsListener
+ class DnsLogger
 {
     private static Logger logger = Logger.getLogger(DnsLogger.class.getName());
   //  Logger logger = DnsLogger.getLogger(DnsLogger.l);
